@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.listRemove = new System.Windows.Forms.ListBox();
-            this.richTextStatus = new System.Windows.Forms.RichTextBox();
+            this.richStatus = new System.Windows.Forms.RichTextBox();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnImport = new System.Windows.Forms.Button();
             this.btnRestoreAll = new System.Windows.Forms.Button();
@@ -64,24 +64,24 @@
             this.listRemove.Sorted = true;
             this.listRemove.TabIndex = 13;
             // 
-            // richTextStatus
+            // richStatus
             // 
-            this.richTextStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.richStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextStatus.BackColor = System.Drawing.Color.White;
-            this.richTextStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextStatus.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextStatus.ForeColor = System.Drawing.Color.Black;
-            this.richTextStatus.HideSelection = false;
-            this.richTextStatus.Location = new System.Drawing.Point(11, 19);
-            this.richTextStatus.Name = "richTextStatus";
-            this.richTextStatus.ReadOnly = true;
-            this.richTextStatus.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextStatus.Size = new System.Drawing.Size(393, 617);
-            this.richTextStatus.TabIndex = 139;
-            this.richTextStatus.Text = "";
-            this.richTextStatus.Visible = false;
+            this.richStatus.BackColor = System.Drawing.Color.White;
+            this.richStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richStatus.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richStatus.ForeColor = System.Drawing.Color.Black;
+            this.richStatus.HideSelection = false;
+            this.richStatus.Location = new System.Drawing.Point(11, 19);
+            this.richStatus.Name = "richStatus";
+            this.richStatus.ReadOnly = true;
+            this.richStatus.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.richStatus.Size = new System.Drawing.Size(393, 617);
+            this.richStatus.TabIndex = 139;
+            this.richStatus.Text = "";
+            this.richStatus.Visible = false;
             // 
             // btnRefresh
             // 
@@ -230,7 +230,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBin.Controls.Add(this.listRemove);
-            this.groupBin.Controls.Add(this.richTextStatus);
+            this.groupBin.Controls.Add(this.richStatus);
             this.groupBin.Font = new System.Drawing.Font("Segoe UI Variable Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBin.ForeColor = System.Drawing.Color.Violet;
             this.groupBin.Location = new System.Drawing.Point(609, 82);
@@ -290,7 +290,7 @@
         private System.Windows.Forms.Button btnMoveAll;
         private System.Windows.Forms.Button btnMove;
         private System.Windows.Forms.Button btnUninstall;
-        public System.Windows.Forms.RichTextBox richTextStatus;
+        public System.Windows.Forms.RichTextBox richStatus;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listApps;

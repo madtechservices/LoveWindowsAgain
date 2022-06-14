@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.pnlForm = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this._linkFeedback = new System.Windows.Forms.LinkLabel();
             this.btnAppOptions = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,8 +42,8 @@
             this.lblTools = new System.Windows.Forms.Label();
             this.cmbTools = new System.Windows.Forms.ComboBox();
             this.lblHeader = new System.Windows.Forms.Label();
-            this.treeFeatures = new System.Windows.Forms.TreeView();
             this.richLog = new System.Windows.Forms.RichTextBox();
+            this.treeFeatures = new System.Windows.Forms.TreeView();
             this.contextKebapMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuAdvanced = new System.Windows.Forms.ToolStripMenuItem();
             this.menuIgnoreLowLevelP = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,6 +72,7 @@
             // pnlMain
             // 
             this.pnlMain.AutoScroll = true;
+            this.pnlMain.Controls.Add(this._linkFeedback);
             this.pnlMain.Controls.Add(this.btnAppOptions);
             this.pnlMain.Controls.Add(this.btnSettings);
             this.pnlMain.Controls.Add(this.label1);
@@ -81,13 +83,26 @@
             this.pnlMain.Controls.Add(this.lblTools);
             this.pnlMain.Controls.Add(this.cmbTools);
             this.pnlMain.Controls.Add(this.lblHeader);
-            this.pnlMain.Controls.Add(this.treeFeatures);
             this.pnlMain.Controls.Add(this.richLog);
+            this.pnlMain.Controls.Add(this.treeFeatures);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1019, 801);
             this.pnlMain.TabIndex = 0;
+            // 
+            // _linkFeedback
+            // 
+            this._linkFeedback.AutoEllipsis = true;
+            this._linkFeedback.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._linkFeedback.LinkColor = System.Drawing.Color.MediumVioletRed;
+            this._linkFeedback.Location = new System.Drawing.Point(85, 171);
+            this._linkFeedback.Name = "_linkFeedback";
+            this._linkFeedback.Size = new System.Drawing.Size(490, 25);
+            this._linkFeedback.TabIndex = 179;
+            this._linkFeedback.TabStop = true;
+            this._linkFeedback.Text = "...or keep crying with us and read what we hate most about Windows 11";
+            this._linkFeedback.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this._linkFeedback_LinkClicked);
             // 
             // btnAppOptions
             // 
@@ -233,6 +248,26 @@
     " app will scan your system and optimize your settings to make sure your PC is ru" +
     "nning the best it can.";
             // 
+            // richLog
+            // 
+            this.richLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richLog.BackColor = System.Drawing.Color.White;
+            this.richLog.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richLog.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.richLog.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richLog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.richLog.HideSelection = false;
+            this.richLog.Location = new System.Drawing.Point(72, 305);
+            this.richLog.Name = "richLog";
+            this.richLog.ReadOnly = true;
+            this.richLog.Size = new System.Drawing.Size(861, 360);
+            this.richLog.TabIndex = 138;
+            this.richLog.Text = "";
+            this.richLog.Visible = false;
+            this.richLog.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richLog_LinkClicked);
+            // 
             // treeFeatures
             // 
             this.treeFeatures.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -255,26 +290,6 @@
             this.treeFeatures.TabIndex = 168;
             this.treeFeatures.Visible = false;
             this.treeFeatures.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.treeFeatures_AfterCheck);
-            // 
-            // richLog
-            // 
-            this.richLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richLog.BackColor = System.Drawing.Color.White;
-            this.richLog.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richLog.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.richLog.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richLog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richLog.HideSelection = false;
-            this.richLog.Location = new System.Drawing.Point(72, 305);
-            this.richLog.Name = "richLog";
-            this.richLog.ReadOnly = true;
-            this.richLog.Size = new System.Drawing.Size(861, 360);
-            this.richLog.TabIndex = 138;
-            this.richLog.Text = "";
-            this.richLog.Visible = false;
-            this.richLog.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richLog_LinkClicked);
             // 
             // contextKebapMenu
             // 
@@ -314,7 +329,7 @@
             this.menuRestoreInfo});
             this.contextAppMenu.Name = "menuMain";
             this.contextAppMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.contextAppMenu.Size = new System.Drawing.Size(361, 132);
+            this.contextAppMenu.Size = new System.Drawing.Size(361, 110);
             // 
             // menuFix
             // 
@@ -405,6 +420,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem menuRestore;
         private System.Windows.Forms.ToolStripTextBox menuRestoreInfo;
+        private System.Windows.Forms.LinkLabel _linkFeedback;
     }
 }
 

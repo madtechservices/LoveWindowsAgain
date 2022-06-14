@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -15,10 +16,17 @@ namespace LoveWindowsAgain
         // Some UI nicety
         private void SetStyle()
         {
-            btnBack.Text = "\uE72B";
-            lblAssembly.Text = "LowaApp-Version " + Program.GetCurrentVersionTostring();
+            BackColor =
+            _lblAppName.BackColor =
+            _lblAssembly.BackColor =
+            _lblWith.BackColor =
+            _lblHeartFillEmoji.BackColor =
+            _lblDev.BackColor =
+              Color.FromArgb(245, 241, 249);
 
-            lblHeartFillEmoji.Text = "\uEB52";
+            btnBack.Text = "\uE72B";
+            _lblAssembly.Text = "LowaApp-Version " + Program.GetCurrentVersionTostring();
+            _lblHeartFillEmoji.Text = "\uEB52";
         }
 
         private void btnBack_Click(object sender, System.EventArgs e)

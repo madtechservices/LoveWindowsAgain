@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.listOnline = new System.Windows.Forms.ListBox();
+            this.listRemote = new System.Windows.Forms.ListBox();
             this.btnRemoveAll = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listInstall = new System.Windows.Forms.ListBox();
-            this.richTextStatus = new System.Windows.Forms.RichTextBox();
+            this.listLocal = new System.Windows.Forms.ListBox();
+            this.richStatus = new System.Windows.Forms.RichTextBox();
             this.btnInstall = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAddAll = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox2.Controls.Add(this.listOnline);
+            this.groupBox2.Controls.Add(this.listRemote);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Variable Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Violet;
             this.groupBox2.Location = new System.Drawing.Point(28, 82);
@@ -59,21 +59,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Remote packages";
             // 
-            // listOnline
+            // listRemote
             // 
-            this.listOnline.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.listRemote.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.listOnline.BackColor = System.Drawing.Color.White;
-            this.listOnline.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listOnline.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listOnline.FormattingEnabled = true;
-            this.listOnline.ItemHeight = 17;
-            this.listOnline.Location = new System.Drawing.Point(11, 36);
-            this.listOnline.Name = "listOnline";
-            this.listOnline.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listOnline.Size = new System.Drawing.Size(394, 595);
-            this.listOnline.Sorted = true;
-            this.listOnline.TabIndex = 13;
+            this.listRemote.BackColor = System.Drawing.Color.White;
+            this.listRemote.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listRemote.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listRemote.FormattingEnabled = true;
+            this.listRemote.ItemHeight = 17;
+            this.listRemote.Location = new System.Drawing.Point(11, 36);
+            this.listRemote.Name = "listRemote";
+            this.listRemote.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.listRemote.Size = new System.Drawing.Size(394, 595);
+            this.listRemote.Sorted = true;
+            this.listRemote.TabIndex = 13;
             // 
             // btnRemoveAll
             // 
@@ -92,8 +92,8 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.listInstall);
-            this.groupBox1.Controls.Add(this.richTextStatus);
+            this.groupBox1.Controls.Add(this.listLocal);
+            this.groupBox1.Controls.Add(this.richStatus);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Variable Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Violet;
             this.groupBox1.Location = new System.Drawing.Point(609, 82);
@@ -103,41 +103,41 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Local packages (to be installed)";
             // 
-            // listInstall
+            // listLocal
             // 
-            this.listInstall.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.listLocal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listInstall.BackColor = System.Drawing.Color.White;
-            this.listInstall.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listInstall.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listInstall.FormattingEnabled = true;
-            this.listInstall.ItemHeight = 17;
-            this.listInstall.Location = new System.Drawing.Point(11, 36);
-            this.listInstall.Name = "listInstall";
-            this.listInstall.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listInstall.Size = new System.Drawing.Size(394, 595);
-            this.listInstall.Sorted = true;
-            this.listInstall.TabIndex = 13;
+            this.listLocal.BackColor = System.Drawing.Color.White;
+            this.listLocal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listLocal.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listLocal.FormattingEnabled = true;
+            this.listLocal.ItemHeight = 17;
+            this.listLocal.Location = new System.Drawing.Point(11, 36);
+            this.listLocal.Name = "listLocal";
+            this.listLocal.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.listLocal.Size = new System.Drawing.Size(394, 595);
+            this.listLocal.Sorted = true;
+            this.listLocal.TabIndex = 13;
             // 
-            // richTextStatus
+            // richStatus
             // 
-            this.richTextStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.richStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextStatus.BackColor = System.Drawing.Color.White;
-            this.richTextStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextStatus.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextStatus.ForeColor = System.Drawing.Color.Black;
-            this.richTextStatus.HideSelection = false;
-            this.richTextStatus.Location = new System.Drawing.Point(11, 19);
-            this.richTextStatus.Name = "richTextStatus";
-            this.richTextStatus.ReadOnly = true;
-            this.richTextStatus.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextStatus.Size = new System.Drawing.Size(393, 613);
-            this.richTextStatus.TabIndex = 140;
-            this.richTextStatus.Text = "";
-            this.richTextStatus.Visible = false;
+            this.richStatus.BackColor = System.Drawing.Color.White;
+            this.richStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richStatus.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richStatus.ForeColor = System.Drawing.Color.Black;
+            this.richStatus.HideSelection = false;
+            this.richStatus.Location = new System.Drawing.Point(11, 19);
+            this.richStatus.Name = "richStatus";
+            this.richStatus.ReadOnly = true;
+            this.richStatus.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.richStatus.Size = new System.Drawing.Size(393, 613);
+            this.richStatus.TabIndex = 140;
+            this.richStatus.Text = "";
+            this.richStatus.Visible = false;
             // 
             // btnInstall
             // 
@@ -253,15 +253,15 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ListBox listOnline;
+        private System.Windows.Forms.ListBox listRemote;
         private System.Windows.Forms.Button btnRemoveAll;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox listInstall;
+        private System.Windows.Forms.ListBox listLocal;
         private System.Windows.Forms.Button btnInstall;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnAddAll;
         private System.Windows.Forms.Button btnAdd;
-        public System.Windows.Forms.RichTextBox richTextStatus;
+        public System.Windows.Forms.RichTextBox richStatus;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textSearch;

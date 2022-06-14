@@ -29,79 +29,79 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lblSettingsSubDev = new System.Windows.Forms.Label();
-            this.lblSettingsSubWith = new System.Windows.Forms.Label();
-            this.lblHeartFillEmoji = new System.Windows.Forms.Label();
-            this.lblAssembly = new System.Windows.Forms.Label();
+            this._lblDev = new System.Windows.Forms.Label();
+            this._lblWith = new System.Windows.Forms.Label();
+            this._lblHeartFillEmoji = new System.Windows.Forms.Label();
+            this._lblAssembly = new System.Windows.Forms.Label();
             this.lblAppMediaPayPal = new System.Windows.Forms.LinkLabel();
             this.lblAppMediaTwitter = new System.Windows.Forms.LinkLabel();
             this.lblAppMediaGitHub = new System.Windows.Forms.LinkLabel();
-            this.lblSettingsApp = new System.Windows.Forms.Label();
+            this._lblAppName = new System.Windows.Forms.Label();
             this.tt = new System.Windows.Forms.ToolTip(this.components);
             this.btnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this._lblAboutInfo = new System.Windows.Forms.Label();
             this.btnAppMediaTweetIntent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblSettingsSubDev
+            // _lblDev
             // 
-            this.lblSettingsSubDev.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this._lblDev.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSettingsSubDev.AutoEllipsis = true;
-            this.lblSettingsSubDev.AutoSize = true;
-            this.lblSettingsSubDev.BackColor = System.Drawing.Color.White;
-            this.lblSettingsSubDev.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSettingsSubDev.ForeColor = System.Drawing.Color.Gray;
-            this.lblSettingsSubDev.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblSettingsSubDev.Location = new System.Drawing.Point(127, 231);
-            this.lblSettingsSubDev.Name = "lblSettingsSubDev";
-            this.lblSettingsSubDev.Size = new System.Drawing.Size(169, 20);
-            this.lblSettingsSubDev.TabIndex = 187;
-            this.lblSettingsSubDev.Text = "by Belim aka Builtbybel";
+            this._lblDev.AutoEllipsis = true;
+            this._lblDev.AutoSize = true;
+            this._lblDev.BackColor = System.Drawing.Color.White;
+            this._lblDev.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lblDev.ForeColor = System.Drawing.Color.Gray;
+            this._lblDev.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this._lblDev.Location = new System.Drawing.Point(127, 231);
+            this._lblDev.Name = "_lblDev";
+            this._lblDev.Size = new System.Drawing.Size(169, 20);
+            this._lblDev.TabIndex = 187;
+            this._lblDev.Text = "by Belim aka Builtbybel";
             // 
-            // lblSettingsSubWith
+            // _lblWith
             // 
-            this.lblSettingsSubWith.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this._lblWith.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSettingsSubWith.AutoEllipsis = true;
-            this.lblSettingsSubWith.AutoSize = true;
-            this.lblSettingsSubWith.BackColor = System.Drawing.Color.White;
-            this.lblSettingsSubWith.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSettingsSubWith.ForeColor = System.Drawing.Color.Gray;
-            this.lblSettingsSubWith.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblSettingsSubWith.Location = new System.Drawing.Point(63, 231);
-            this.lblSettingsSubWith.Name = "lblSettingsSubWith";
-            this.lblSettingsSubWith.Size = new System.Drawing.Size(38, 20);
-            this.lblSettingsSubWith.TabIndex = 186;
-            this.lblSettingsSubWith.Text = "with";
+            this._lblWith.AutoEllipsis = true;
+            this._lblWith.AutoSize = true;
+            this._lblWith.BackColor = System.Drawing.Color.White;
+            this._lblWith.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lblWith.ForeColor = System.Drawing.Color.Gray;
+            this._lblWith.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this._lblWith.Location = new System.Drawing.Point(63, 231);
+            this._lblWith.Name = "_lblWith";
+            this._lblWith.Size = new System.Drawing.Size(38, 20);
+            this._lblWith.TabIndex = 186;
+            this._lblWith.Text = "with";
             // 
-            // lblHeartFillEmoji
+            // _lblHeartFillEmoji
             // 
-            this.lblHeartFillEmoji.BackColor = System.Drawing.Color.White;
-            this.lblHeartFillEmoji.Font = new System.Drawing.Font("Segoe Fluent Icons", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeartFillEmoji.ForeColor = System.Drawing.Color.HotPink;
-            this.lblHeartFillEmoji.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblHeartFillEmoji.Location = new System.Drawing.Point(99, 231);
-            this.lblHeartFillEmoji.Name = "lblHeartFillEmoji";
-            this.lblHeartFillEmoji.Size = new System.Drawing.Size(32, 25);
-            this.lblHeartFillEmoji.TabIndex = 185;
+            this._lblHeartFillEmoji.BackColor = System.Drawing.Color.White;
+            this._lblHeartFillEmoji.Font = new System.Drawing.Font("Segoe Fluent Icons", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lblHeartFillEmoji.ForeColor = System.Drawing.Color.HotPink;
+            this._lblHeartFillEmoji.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this._lblHeartFillEmoji.Location = new System.Drawing.Point(99, 231);
+            this._lblHeartFillEmoji.Name = "_lblHeartFillEmoji";
+            this._lblHeartFillEmoji.Size = new System.Drawing.Size(32, 25);
+            this._lblHeartFillEmoji.TabIndex = 185;
             // 
-            // lblAssembly
+            // _lblAssembly
             // 
-            this.lblAssembly.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this._lblAssembly.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAssembly.AutoEllipsis = true;
-            this.lblAssembly.AutoSize = true;
-            this.lblAssembly.BackColor = System.Drawing.Color.White;
-            this.lblAssembly.Font = new System.Drawing.Font("Segoe UI Variable Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssembly.ForeColor = System.Drawing.Color.Gray;
-            this.lblAssembly.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblAssembly.Location = new System.Drawing.Point(63, 209);
-            this.lblAssembly.Name = "lblAssembly";
-            this.lblAssembly.Size = new System.Drawing.Size(51, 17);
-            this.lblAssembly.TabIndex = 184;
-            this.lblAssembly.Text = "Version";
+            this._lblAssembly.AutoEllipsis = true;
+            this._lblAssembly.AutoSize = true;
+            this._lblAssembly.BackColor = System.Drawing.Color.White;
+            this._lblAssembly.Font = new System.Drawing.Font("Segoe UI Variable Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lblAssembly.ForeColor = System.Drawing.Color.Gray;
+            this._lblAssembly.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this._lblAssembly.Location = new System.Drawing.Point(63, 209);
+            this._lblAssembly.Name = "_lblAssembly";
+            this._lblAssembly.Size = new System.Drawing.Size(51, 17);
+            this._lblAssembly.TabIndex = 184;
+            this._lblAssembly.Text = "Version";
             // 
             // lblAppMediaPayPal
             // 
@@ -151,21 +151,21 @@
             this.lblAppMediaGitHub.VisitedLinkColor = System.Drawing.Color.MediumVioletRed;
             this.lblAppMediaGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblAppMediaGitHub_LinkClicked);
             // 
-            // lblSettingsApp
+            // _lblAppName
             // 
-            this.lblSettingsApp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this._lblAppName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSettingsApp.AutoEllipsis = true;
-            this.lblSettingsApp.AutoSize = true;
-            this.lblSettingsApp.BackColor = System.Drawing.Color.White;
-            this.lblSettingsApp.Font = new System.Drawing.Font("Segoe UI Variable Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSettingsApp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblSettingsApp.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblSettingsApp.Location = new System.Drawing.Point(59, 173);
-            this.lblSettingsApp.Name = "lblSettingsApp";
-            this.lblSettingsApp.Size = new System.Drawing.Size(270, 36);
-            this.lblSettingsApp.TabIndex = 177;
-            this.lblSettingsApp.Text = "LoveWindowsAgain";
+            this._lblAppName.AutoEllipsis = true;
+            this._lblAppName.AutoSize = true;
+            this._lblAppName.BackColor = System.Drawing.Color.White;
+            this._lblAppName.Font = new System.Drawing.Font("Segoe UI Variable Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lblAppName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._lblAppName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this._lblAppName.Location = new System.Drawing.Point(59, 173);
+            this._lblAppName.Name = "_lblAppName";
+            this._lblAppName.Size = new System.Drawing.Size(270, 36);
+            this._lblAppName.TabIndex = 177;
+            this._lblAppName.Text = "LoveWindowsAgain";
             // 
             // btnBack
             // 
@@ -193,16 +193,16 @@
             this.label1.TabIndex = 189;
             this.label1.Text = "Settings";
             // 
-            // label2
+            // _lblAboutInfo
             // 
-            this.label2.AutoEllipsis = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Variable Display", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(62, 143);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(960, 19);
-            this.label2.TabIndex = 190;
-            this.label2.Text = "About this app";
+            this._lblAboutInfo.AutoEllipsis = true;
+            this._lblAboutInfo.Font = new System.Drawing.Font("Segoe UI Variable Display", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lblAboutInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._lblAboutInfo.Location = new System.Drawing.Point(62, 143);
+            this._lblAboutInfo.Name = "_lblAboutInfo";
+            this._lblAboutInfo.Size = new System.Drawing.Size(960, 19);
+            this._lblAboutInfo.TabIndex = 190;
+            this._lblAboutInfo.Text = "About this app";
             // 
             // btnAppMediaTweetIntent
             // 
@@ -222,15 +222,15 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnAppMediaTweetIntent);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this._lblAboutInfo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.lblSettingsSubDev);
-            this.Controls.Add(this.lblSettingsSubWith);
-            this.Controls.Add(this.lblSettingsApp);
-            this.Controls.Add(this.lblHeartFillEmoji);
+            this.Controls.Add(this._lblDev);
+            this.Controls.Add(this._lblWith);
+            this.Controls.Add(this._lblAppName);
+            this.Controls.Add(this._lblHeartFillEmoji);
             this.Controls.Add(this.lblAppMediaGitHub);
-            this.Controls.Add(this.lblAssembly);
+            this.Controls.Add(this._lblAssembly);
             this.Controls.Add(this.lblAppMediaTwitter);
             this.Controls.Add(this.lblAppMediaPayPal);
             this.Name = "AboutPageView";
@@ -243,16 +243,16 @@
         #endregion
         private System.Windows.Forms.ToolTip tt;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Label lblSettingsSubDev;
-        private System.Windows.Forms.Label lblSettingsSubWith;
-        private System.Windows.Forms.Label lblHeartFillEmoji;
-        private System.Windows.Forms.Label lblAssembly;
+        private System.Windows.Forms.Label _lblDev;
+        private System.Windows.Forms.Label _lblWith;
+        private System.Windows.Forms.Label _lblHeartFillEmoji;
+        private System.Windows.Forms.Label _lblAssembly;
         private System.Windows.Forms.LinkLabel lblAppMediaPayPal;
         private System.Windows.Forms.LinkLabel lblAppMediaTwitter;
         private System.Windows.Forms.LinkLabel lblAppMediaGitHub;
-        private System.Windows.Forms.Label lblSettingsApp;
+        private System.Windows.Forms.Label _lblAppName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label _lblAboutInfo;
         private System.Windows.Forms.Button btnAppMediaTweetIntent;
     }
 }

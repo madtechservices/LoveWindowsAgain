@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -20,7 +21,7 @@ namespace LoveWindowsAgain
             InitializeComponent();
 
             RequestPackagesRemote();
-            listOnline.Items.AddRange(remoteApps.ToArray());
+            listRemote.Items.AddRange(remoteApps.ToArray());
 
             SetStyle();
         }
@@ -28,6 +29,11 @@ namespace LoveWindowsAgain
         // Some UI nicety
         private void SetStyle()
         {
+            BackColor =
+            listRemote.BackColor =
+            listLocal.BackColor =
+            richStatus.BackColor =
+              Color.FromArgb(245, 241, 249);
             btnBack.Text = "\uE72B";
         }
 
@@ -60,36 +66,36 @@ namespace LoveWindowsAgain
 
         private void textSearch_TextChanged(object sender, EventArgs e)
         {
-            listOnline.Items.Clear();
+            listRemote.Items.Clear();
 
             foreach (string str in remoteApps)
             {
                 if (str.IndexOf(textSearch.Text, 0, StringComparison.CurrentCultureIgnoreCase) != -1)
                 {
-                    listOnline.Items.Add(str);
+                    listRemote.Items.Add(str);
                 }
             }
         }
 
         private void btnAddAll_Click(object sender, EventArgs e)
         {
-            foreach (var item in listOnline.Items)
+            foreach (var item in listRemote.Items)
             {
-                listInstall.Items.Add(item);
+                listLocal.Items.Add(item);
             }
-            listOnline.Items.Clear();
+            listRemote.Items.Clear();
             RefreshPackages();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (listOnline.Items.Count != 0)
+            if (listRemote.Items.Count != 0)
             {
-                if (listOnline.SelectedItem == null) listOnline.SelectedIndex = 0;
-                while (listOnline.SelectedItem != null)
+                if (listRemote.SelectedItem == null) listRemote.SelectedIndex = 0;
+                while (listRemote.SelectedItem != null)
                 {
-                    listInstall.Items.Add(listOnline.SelectedItem);
-                    listOnline.Items.Remove(listOnline.SelectedItem);
+                    listLocal.Items.Add(listRemote.SelectedItem);
+                    listRemote.Items.Remove(listRemote.SelectedItem);
                 }
                 RefreshPackages();
             }
@@ -97,13 +103,13 @@ namespace LoveWindowsAgain
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            if (listInstall.Items.Count != 0)
+            if (listLocal.Items.Count != 0)
             {
-                if (listInstall.SelectedItem == null) listInstall.SelectedIndex = 0;
-                while (listInstall.SelectedItem != null)
+                if (listLocal.SelectedItem == null) listLocal.SelectedIndex = 0;
+                while (listLocal.SelectedItem != null)
                 {
-                    listOnline.Items.Add(listInstall.SelectedItem);
-                    listInstall.Items.Remove(listInstall.SelectedItem);
+                    listRemote.Items.Add(listLocal.SelectedItem);
+                    listLocal.Items.Remove(listLocal.SelectedItem);
                 }
                 RefreshPackages();
             }
@@ -111,11 +117,11 @@ namespace LoveWindowsAgain
 
         private void btnRemoveAll_Click(object sender, EventArgs e)
         {
-            foreach (var item in listInstall.Items)
+            foreach (var item in listLocal.Items)
             {
-                listOnline.Items.Add(item);
+                listRemote.Items.Add(item);
             }
-            listInstall.Items.Clear();
+            listLocal.Items.Clear();
             RefreshPackages();
         }
 
@@ -138,41 +144,41 @@ namespace LoveWindowsAgain
 
         private void RefreshPackages()
         {
-            if (listInstall.Items.Count == 0)
+            if (listLocal.Items.Count == 0)
             {
-                richTextStatus.Visible = true;
-                listInstall.Visible = false;
+                richStatus.Visible = true;
+                listLocal.Visible = false;
             }
             else
             {
-                listInstall.Visible = true;
-                richTextStatus.Visible = false;
+                listLocal.Visible = true;
+                richStatus.Visible = false;
             }
         }
 
         private async void btnInstall_Click(object sender, EventArgs e)
         {
-            richTextStatus.Visible = true;
-            listInstall.Visible = false;
+            richStatus.Visible = true;
+            listLocal.Visible = false;
             btnInstall.Enabled = false;
 
             StringBuilder message = new StringBuilder();
 
-            foreach (string p in listInstall.Items)
+            foreach (string p in listLocal.Items)
             {
                 Packages.Add(p);
             }
 
             foreach (string p in Packages)
             {
-                richTextStatus.Text += Environment.NewLine + "Installing -" + p;
+                richStatus.Text += Environment.NewLine + "Installing -" + p;
                 await Task.Run(() => WingetInstallPackage(p));
             }
 
             groupBox1.Text = "The following apps have been installed";
-            listInstall.Visible = true;
+            listLocal.Visible = true;
             btnInstall.Enabled = true;
-            richTextStatus.Visible = false;
+            richStatus.Visible = false;
         }
 
         private void btnBack_Click(object sender, EventArgs e)

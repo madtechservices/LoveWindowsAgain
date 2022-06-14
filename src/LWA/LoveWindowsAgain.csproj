@@ -144,6 +144,12 @@
     <Compile Include="Views\AppsPageView.Designer.cs">
       <DependentUpon>AppsPageView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FeedbackPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FeedbackPageView.Designer.cs">
+      <DependentUpon>FeedbackPageView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\PackagesPageView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AppsPageView.resx">
       <DependentUpon>AppsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FeedbackPageView.resx">
+      <DependentUpon>FeedbackPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PackagesPageView.resx">
       <DependentUpon>PackagesPageView.cs</DependentUpon>

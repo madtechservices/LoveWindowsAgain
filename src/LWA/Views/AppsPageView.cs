@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Management.Automation;
@@ -30,6 +31,11 @@ namespace LoveWindowsAgain
         // Some UI nicety
         private void SetStyle()
         {
+            BackColor =
+            listApps.BackColor =
+            listRemove.BackColor =
+            richStatus.BackColor =
+              Color.FromArgb(245, 241, 249);
             btnBack.Text = "\uE72B";
         }
 
@@ -121,13 +127,13 @@ namespace LoveWindowsAgain
 
             if (listRemove.Items.Count == 0)
             {
-                richTextStatus.Visible = true;
+                richStatus.Visible = true;
                 listRemove.Visible = false;
             }
             else
             {
                 listRemove.Visible = true;
-                richTextStatus.Visible = false;
+                richStatus.Visible = false;
             }
 
             if (installed == 0)
@@ -265,14 +271,14 @@ namespace LoveWindowsAgain
             {
                 removeAppsList.Clear();
                 removeAppsFailedList.Clear();
-                richTextStatus.Visible = true;
-                richTextStatus.Clear();
+                richStatus.Visible = true;
+                richStatus.Clear();
                 listRemove.Visible = false;
                 btnUninstall.Enabled = false;
 
                 foreach (string app in listRemove.Items)
                 {
-                    richTextStatus.Text += Environment.NewLine + "Uninstalling " + app.ToString();
+                    richStatus.Text += Environment.NewLine + "Uninstalling " + app.ToString();
 
                     await Task.Run(() => RemoveApps(app));
                 }
@@ -305,8 +311,8 @@ namespace LoveWindowsAgain
                 btnRefresh.PerformClick();
 
                 btnUninstall.Enabled = true;
-                richTextStatus.Text = message + Environment.NewLine;
-                richTextStatus.Text += Environment.NewLine + listApps.Items.Count + " apps are left.\n";
+                richStatus.Text = message + Environment.NewLine;
+                richStatus.Text += Environment.NewLine + listApps.Items.Count + " apps are left.\n";
             }
         }
 

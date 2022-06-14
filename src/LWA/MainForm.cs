@@ -38,6 +38,10 @@ namespace LoveWindowsAgain
             btnSettings.Text = "\uE713";
             btnAnalyze.Text += "\x20" + OsHelper.thisOS;
 
+            BackColor =
+            treeFeatures.BackColor =
+            richLog.BackColor =
+                Color.FromArgb(245, 241, 249);
             logger.SetTarget(richLog);          // Log messages to target richLog
             INavPage = pnlForm.Controls[0];     // Set default NavPage
         }
@@ -104,6 +108,9 @@ namespace LoveWindowsAgain
                     break;
             }
         }
+
+        private void _linkFeedback_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+          => this.SetView(new FeedbackPageView());
 
         private void btnSettings_Click(object sender, EventArgs e)
             => this.SetView(new AboutPageView());                    // Settings view
@@ -459,5 +466,7 @@ namespace LoveWindowsAgain
 
         private void lnkSubHeader_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
             => menuAdvanced.PerformClick();
+
+      
     }
 }
