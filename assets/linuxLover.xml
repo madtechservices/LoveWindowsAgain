@@ -41,4 +41,15 @@
     <info>Microsoft response:Thanks for taking the time to reach out about this. Please read the following blog post which includes more information about the reasons for this change: https://www.microsoft.com/security/blog/2021/06/25/windows-11-enables-security-by-design-from-the-chip-to-the-cloud/</info>
     <uri>https://aka.ms/AAd0lp6</uri>
    </proposal>
+     <votes>8k</votes>
+    <id>8. The CPU/Processor requirements for Windows 11 are too high and I think you should lower them</id>
+    <info>Microsoft response:Thank you for taking the time to share feedback about this - please see the latest blog post: https://aka.ms/win11hwrequpdate</info>
+    <uri>https://aka.ms/AAd0lp6</uri>
+   </proposal>
+      </proposal>
+     <votes>8k</votes>
+    <id>9. Improve the performance of common actions in File Explorer in Windows 11</id>
+    <info>Microsoft response:We'll be continuing to monitor feedback in this space. If you're seeing something consistently, please take a moment to capture a performance trace of the issue (an option in step #4 when filing feedback of type Problem), including details about what exactly you're seeing. If needed, more information about filing feedback is available here: http://aka.ms/HowToFeedback UPDATE: Just wanted to let you know that in addition to the above, with Build 22572 we've done some work specifically to help with performance of invoking the context menu in File Explorer. Thanks again everyone who's shared feedback about this</info>
+    <uri>https://aka.ms/AAeirq8</uri>
+   </proposal>
  </LWA>
