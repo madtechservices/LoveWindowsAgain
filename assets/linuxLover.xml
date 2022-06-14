@@ -1,0 +1,44 @@
+<LWA>
+  <proposal>
+	<votes>18,2k</votes>
+    <id>1. Bring back the ability to move the taskbar to the top and sides of the screen on Windows 11</id>
+    <info>Microsoft response: We'll be continuing to evolve Windows 11 and its features based on feedback like this, so thank you so much for taking the time to give us your feedback!</info>
+    <uri>https://aka.ms/AAd2ifw</uri>
+   </proposal>
+  <proposal>
+  <votes>13.3k</votes>
+    <id>2. Update the Windows 11 taskbar to support never combining app icons and showing labels</id>
+    <info>Microsoft response: -</info>
+    <uri>https://aka.ms/AAd2l82</uri>
+   </proposal>
+  <proposal>
+  <votes>10,8k</votes>
+    <id>3. Bring back right-click for Task Manager option on taskbar in Windows 11</id>
+    <info>Microsoft response: Thank you so much for giving us your feedback. While we'll continue to use your feedback to guide the future of features like this, currently on Windows 11, you can right-click the Start menu button to quickly open the Task Manager. In addition you can also press CTRL + SHIFT + ESC to open Task Manager directly</info>
+    <uri>https://aka.ms/AAd2pnz</uri>
+   </proposal>
+  <proposal>
+  <votes>9,8k</votes>
+    <id>4. Update the Windows 11 taskbar to support using small icons option that Windows 10 had</id>
+    <info>Microsoft response: -</info>
+    <uri>https://aka.ms/AAd237v</uri>
+   </proposal>
+  <proposal>
+  <votes>8,6k</votes>
+    <id>5. I would like to be able to turn off the Recommended section in the Start menu and have the whole area disappear in Windows 11</id>
+    <info>Microsoft response: We made a new layout for Start that will let you reduce the size of the Recommended section. Right-click on Start to quickly access Start settings and choose the More pins layout option to show an extra row of pins with Build 22509, now available in the Dev Channel.</info>
+    <uri>https://aka.ms/AAd2ueb</uri>
+   </proposal>
+  <proposal>
+  <votes>8,5k</votes>
+    <id>6. Update the Windows 11 taskbar to support dragging and dropping files onto the app icons to open them in / transfer them to that app</id>
+    <info>Microsoft response: Thank you for all your feedback! We have added the ability to quickly drag and drop files between app windows, by hovering over apps in the taskbar to bring their windows to the foreground, and then once in the foreground, drop your file into the app with Build 22557, now available in the Dev Channel: https://aka.ms/wip22557</info>
+    <uri>https://aka.ms/AAd4ejq</uri>
+   </proposal>
+  <proposal>
+  <votes>8.3k</votes>
+    <id>7. Remove the TPM requirement in determining Windows 11 eligibility</id>
+    <info>Microsoft response:Thanks for taking the time to reach out about this. Please read the following blog post which includes more information about the reasons for this change: https://www.microsoft.com/security/blog/2021/06/25/windows-11-enables-security-by-design-from-the-chip-to-the-cloud/</info>
+    <uri>https://aka.ms/AAd0lp6</uri>
+   </proposal>
+ </LWA>
