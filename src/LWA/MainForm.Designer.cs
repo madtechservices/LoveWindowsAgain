@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.pnlForm = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this._linkFeedback = new System.Windows.Forms.LinkLabel();
             this.btnAppOptions = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -72,7 +71,6 @@
             // pnlMain
             // 
             this.pnlMain.AutoScroll = true;
-            this.pnlMain.Controls.Add(this._linkFeedback);
             this.pnlMain.Controls.Add(this.btnAppOptions);
             this.pnlMain.Controls.Add(this.btnSettings);
             this.pnlMain.Controls.Add(this.label1);
@@ -90,19 +88,6 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1019, 801);
             this.pnlMain.TabIndex = 0;
-            // 
-            // _linkFeedback
-            // 
-            this._linkFeedback.AutoEllipsis = true;
-            this._linkFeedback.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._linkFeedback.LinkColor = System.Drawing.Color.MediumVioletRed;
-            this._linkFeedback.Location = new System.Drawing.Point(85, 171);
-            this._linkFeedback.Name = "_linkFeedback";
-            this._linkFeedback.Size = new System.Drawing.Size(490, 25);
-            this._linkFeedback.TabIndex = 179;
-            this._linkFeedback.TabStop = true;
-            this._linkFeedback.Text = "...or keep crying with us and read what we hate most about Windows 11";
-            this._linkFeedback.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this._linkFeedback_LinkClicked);
             // 
             // btnAppOptions
             // 
@@ -420,7 +405,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem menuRestore;
         private System.Windows.Forms.ToolStripTextBox menuRestoreInfo;
-        private System.Windows.Forms.LinkLabel _linkFeedback;
     }
 }
 

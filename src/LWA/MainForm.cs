@@ -68,16 +68,6 @@ namespace LoveWindowsAgain
             cmbTools.SelectedIndex = 0;
         }
 
-        private void RegisterFeedbackTool()
-        {
-            bool feedbackHub = Directory.Exists(Path.Combine
-          (Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-          "Packages\\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe"));
-
-            if (!feedbackHub) MessageBox.Show("FeedbackHub is not installed on this system :(\nYou can get it on the Microsoft Store.", "We are sorry...", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else Process.Start(@"shell:appsfolder\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App");
-        }
-
         /// <summary>
         /// Register some more Tools
         /// </summary>
@@ -101,16 +91,13 @@ namespace LoveWindowsAgain
                     break;
 
                 case "Send":
-                    RegisterFeedbackTool();                          // Send feedback to Microsoft
+                    this.SetView(new FeedbackPageView());                          // Send feedback to Microsoft
                     break;
 
                 default:
                     break;
             }
         }
-
-        private void _linkFeedback_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-          => this.SetView(new FeedbackPageView());
 
         private void btnSettings_Click(object sender, EventArgs e)
             => this.SetView(new AboutPageView());                    // Settings view
