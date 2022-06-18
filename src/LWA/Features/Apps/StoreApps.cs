@@ -12,7 +12,7 @@ namespace Features.Feature.Apps
 
         public override string ID()
         {
-            return "[LOW] Search and remove pre-installed bloatware apps";
+            return "[LOW] Search and remove pre-installed bloatware apps automatically";
         }
 
         public override string Info()

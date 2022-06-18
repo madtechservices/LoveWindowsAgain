@@ -54,6 +54,7 @@ namespace LoveWindowsAgain
 
                 if (listApps.Items.Contains(Regex.Replace(current, "(@{Name=)|(})", ""))) continue;
                 listApps.Items.Add(Regex.Replace(current, "(@{Name=)|(})", ""));
+                removeAppsList.Add(Regex.Replace(current, "(@{Name=)|(})", ""));
             }
 
             // Compare left and rights apps list and remove differences
@@ -159,6 +160,7 @@ namespace LoveWindowsAgain
         {
             listApps.Items.Clear();
             listRemove.Items.Clear();
+            removeAppsList.Clear();
 
             InitializeAppsSystem();
             InitializeApps();
@@ -251,10 +253,15 @@ namespace LoveWindowsAgain
                 "\n\nNote, however, this app won't allow you to remove a few of the most important built-in apps, like Microsoft Edge, .NET framework, UI.Xaml etc. " +
                 "as these apps are needed for the Windows 11 \"Experience\" and for other programs. If you try, you’ll see an error message saying the removal failed.");
 
+                removeAppsList.Clear();
                 InitializeAppsSystem();
                 InitializeApps();
+
             }
-            else InitializeApps();
+            else
+            {
+                removeAppsList.Clear(); InitializeApps();
+            }
         }
 
         private async void btnUninstall_Click(object sender, EventArgs e)
@@ -322,5 +329,21 @@ namespace LoveWindowsAgain
             mainForm.pnlForm.Controls.Clear();
             if (mainForm.INavPage != null) mainForm.pnlForm.Controls.Add(mainForm.INavPage);
         }
+
+        private void textSearch_TextChanged(object sender, EventArgs e)
+        {
+            listApps.Items.Clear();
+
+            foreach (string str in removeAppsList)
+            {
+                if (str.IndexOf(textSearch.Text, 0, StringComparison.CurrentCultureIgnoreCase) != -1)
+                {
+                    listApps.Items.Add(str);
+                }
+            }
+        }
+
+        private void textSearch_Click(object sender, EventArgs e)
+             => textSearch.Text = "";
     }
 }

@@ -91,7 +91,7 @@ namespace LoveWindowsAgain
                     break;
 
                 case "Send":
-                    this.SetView(new FeedbackPageView());                          // Send feedback to Microsoft
+                    this.SetView(new FeedbackPageView());             // Send feedback to Microsoft
                     break;
 
                 default:
@@ -239,7 +239,6 @@ namespace LoveWindowsAgain
             foreach (FeatureNode node in selectedFeatures)
             {
                 var feature = node.Feature;
-                ListViewItem detail = new ListViewItem(feature.ID());
                 ConfiguredTaskAwaitable<bool> analyzeTask = Task<bool>.Factory.StartNew(() => feature.CheckFeature()).ConfigureAwait(true);
                 // logger.Log("Check {0}", node.Text);
 

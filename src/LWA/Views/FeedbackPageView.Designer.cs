@@ -111,7 +111,7 @@
             this.btnAnalyze.BackColor = System.Drawing.Color.DeepPink;
             this.btnAnalyze.FlatAppearance.BorderSize = 0;
             this.btnAnalyze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnalyze.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnalyze.Font = new System.Drawing.Font("Segoe UI Variable Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnalyze.ForeColor = System.Drawing.Color.Black;
             this.btnAnalyze.Location = new System.Drawing.Point(100, 69);
             this.btnAnalyze.Name = "btnAnalyze";

@@ -43,6 +43,7 @@
             this.checkAppsSystem = new System.Windows.Forms.CheckBox();
             this.groupBin = new System.Windows.Forms.GroupBox();
             this.groupInstalled = new System.Windows.Forms.GroupBox();
+            this.textSearch = new System.Windows.Forms.TextBox();
             this.groupBin.SuspendLayout();
             this.groupInstalled.SuspendLayout();
             this.SuspendLayout();
@@ -206,7 +207,7 @@
             this.listApps.Location = new System.Drawing.Point(11, 36);
             this.listApps.Name = "listApps";
             this.listApps.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listApps.Size = new System.Drawing.Size(394, 544);
+            this.listApps.Size = new System.Drawing.Size(394, 578);
             this.listApps.Sorted = true;
             this.listApps.TabIndex = 13;
             // 
@@ -255,12 +256,26 @@
             this.groupInstalled.TabStop = false;
             this.groupInstalled.Text = "Installed apps";
             // 
+            // textSearch
+            // 
+            this.textSearch.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textSearch.Font = new System.Drawing.Font("Segoe UI Variable Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSearch.ForeColor = System.Drawing.Color.Gray;
+            this.textSearch.Location = new System.Drawing.Point(469, 29);
+            this.textSearch.Name = "textSearch";
+            this.textSearch.Size = new System.Drawing.Size(122, 23);
+            this.textSearch.TabIndex = 181;
+            this.textSearch.Text = "Search...";
+            this.textSearch.Click += new System.EventHandler(this.textSearch_Click);
+            this.textSearch.TextChanged += new System.EventHandler(this.textSearch_TextChanged);
+            // 
             // AppsPageView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.textSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnUninstall);
@@ -278,6 +293,7 @@
             this.groupInstalled.ResumeLayout(false);
             this.groupInstalled.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -297,5 +313,6 @@
         private System.Windows.Forms.CheckBox checkAppsSystem;
         private System.Windows.Forms.GroupBox groupBin;
         private System.Windows.Forms.GroupBox groupInstalled;
+        private System.Windows.Forms.TextBox textSearch;
     }
 }
