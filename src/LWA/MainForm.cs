@@ -3,9 +3,7 @@ using HelperTool;
 using LoveWindowsAgain.ITreeNode;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -41,7 +39,7 @@ namespace LoveWindowsAgain
             BackColor =
             treeFeatures.BackColor =
             richLog.BackColor =
-                Color.FromArgb(245, 241, 249);
+                Color.FromArgb(244, 241, 249);
             logger.SetTarget(richLog);          // Log messages to target richLog
             INavPage = pnlForm.Controls[0];     // Set default NavPage
         }
@@ -452,7 +450,5 @@ namespace LoveWindowsAgain
 
         private void lnkSubHeader_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
             => menuAdvanced.PerformClick();
-
-      
     }
 }
